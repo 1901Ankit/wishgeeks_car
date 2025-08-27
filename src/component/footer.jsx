@@ -14,7 +14,7 @@ import logo from "../assets/wish.webp";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-6">
+    <footer className="bg-white text-black py-6 border-t border-gray-800">
       <div className="container mx-auto px-4">
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
@@ -27,7 +27,7 @@ const Footer = () => {
               India's most trusted platform for buying and selling pre-owned
               cars with complete transparency and a hassle-free experience.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-5">
               <Facebook className="h-6 w-6 hover:scale-110 transition-transform text-black hover:text-[#2380D9] cursor-pointer" />
               <Twitter className="h-6 w-6 hover:scale-110 transition-transform text-black hover:text-sky-400 cursor-pointer" />
               <Instagram className="h-6 w-6 hover:scale-110 transition-transform text-black hover:text-pink-500 cursor-pointer" />

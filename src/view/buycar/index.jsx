@@ -10,19 +10,16 @@ const allCars = [
     id: 1,
     name: "Swift",
     brand: "Maruti",
-    model: "Swift",
-    year: 2023,
-    price: "₹7,0000",
-    priceValue: 7000,
-    originalPrice: "₹8,000",
-    kmDriven: "12,000 km",
-    fuelType: "Petrol",
+    model: "Swift VXi",
+    year: 2022,
+    price: "₹6,80,000",
+    priceValue: 680000,
+    originalPrice: "₹7,20,000",
+    kmDriven: "15,000 km",
     fuel: "Petrol",
     transmission: "Manual",
-    interiorMaterial: "Fabric",
     bodyType: "Hatchback",
     seats: 5,
-    is4x4: false,
     location: "Delhi",
     image: bmw,
     verified: true,
@@ -31,173 +28,322 @@ const allCars = [
     id: 2,
     name: "Creta",
     brand: "Hyundai",
-    model: "Creta",
-    year: 2022,
-    price: "₹15,0000",
-    priceValue: 15000,
-    originalPrice: "₹16,000",
-    kmDriven: "20,000 km",
-    fuelType: "Diesel",
+    model: "Creta SX",
+    year: 2021,
+    price: "₹14,50,000",
+    priceValue: 1450000,
+    originalPrice: "₹15,30,000",
+    kmDriven: "28,000 km",
     fuel: "Diesel",
     transmission: "Automatic",
-    interiorMaterial: "Leather",
     bodyType: "SUV",
     seats: 5,
-    is4x4: true,
     location: "Mumbai",
-    image:
-          "https://images.unsplash.com/photo-1542362567-b07e54358753?w=400&h=300&fit=crop",
+    image: black,
+
     verified: true,
   },
   {
     id: 3,
-    name: "Swift",
+    name: "Baleno",
     brand: "Maruti",
-    model: "Swift",
+    model: "Baleno Zeta",
     year: 2023,
-    price: "₹7,0000",
-    priceValue: 7000,
-    originalPrice: "₹8,000",
-    kmDriven: "12,000 km",
-    fuelType: "Petrol",
+    price: "₹8,40,000",
+    priceValue: 840000,
+    originalPrice: "₹9,00,000",
+    kmDriven: "8,500 km",
     fuel: "Petrol",
     transmission: "Manual",
-    interiorMaterial: "Fabric",
     bodyType: "Hatchback",
     seats: 5,
-    is4x4: false,
-    location: "Delhi",
-    image: black,
+    location: "Chandigarh",
+    image: insurance,
+
     verified: true,
   },
   {
     id: 4,
-    name: "Creta",
-    brand: "Hyundai",
-    model: "Creta",
-    year: 2022,
-    price: "₹15,0000",
-    priceValue: 15000,
-    originalPrice: "₹16,000",
-    kmDriven: "20,000 km",
-    fuelType: "Diesel",
+    name: "Seltos",
+    brand: "Kia",
+    model: "Seltos HTX",
+    year: 2020,
+    price: "₹12,90,000",
+    priceValue: 1290000,
+    originalPrice: "₹14,00,000",
+    kmDriven: "35,000 km",
     fuel: "Diesel",
     transmission: "Automatic",
-    interiorMaterial: "Leather",
     bodyType: "SUV",
     seats: 5,
-    is4x4: true,
-    location: "Mumbai",
-    image: finace,
+    location: "Pune",
+    image: black,
+
     verified: true,
   },
   {
     id: 5,
-    name: "Swift",
-    brand: "Maruti",
-    model: "Swift",
-    year: 2023,
-    price: "₹7,0000",
-    priceValue: 7000,
-    originalPrice: "₹8,000",
-    kmDriven: "12,000 km",
-    fuelType: "Petrol",
-    fuel: "Petrol",
-    transmission: "Manual",
-    interiorMaterial: "Fabric",
-    bodyType: "Hatchback",
-    seats: 5,
-    is4x4: false,
-    location: "Delhi",
-    image:
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=400&h=300&fit=crop",
+    name: "Fortuner",
+    brand: "Toyota",
+    model: "Fortuner 4x4",
+    year: 2019,
+    price: "₹28,00,000",
+    priceValue: 2800000,
+    originalPrice: "₹32,00,000",
+    kmDriven: "60,000 km",
+    fuel: "Diesel",
+    transmission: "Automatic",
+    bodyType: "SUV",
+    seats: 7,
+    location: "Jaipur",
+    image: insurance,
+
     verified: true,
   },
   {
     id: 6,
-    name: "Creta",
-    brand: "Hyundai",
-    model: "Creta",
+    name: "City",
+    brand: "Honda",
+    model: "City ZX",
     year: 2022,
-     price: "₹15,0000",
-    priceValue: 15000,
-    originalPrice: "₹16,000",
-    kmDriven: "20,000 km",
-    fuelType: "Diesel",
-    fuel: "Diesel",
-    transmission: "Automatic",
-    interiorMaterial: "Leather",
-    bodyType: "SUV",
+    price: "₹13,20,000",
+    priceValue: 1320000,
+    originalPrice: "₹14,50,000",
+    kmDriven: "18,000 km",
+    fuel: "Petrol",
+    transmission: "Manual",
+    bodyType: "Sedan",
     seats: 5,
-    is4x4: true,
-    location: "Mumbai",
-    image: insurance,
+    location: "Delhi",
+    image: bmw,
+
     verified: true,
   },
   {
     id: 7,
-    name: "Swift",
+    name: "Alto",
     brand: "Maruti",
-    model: "Swift",
-    year: 2023,
-    price: "₹7,0000",
-    priceValue: 7000,
-    originalPrice: "₹8,000",
-    kmDriven: "12,000 km",
-    fuelType: "Petrol",
+    model: "Alto 800 LXI",
+    year: 2021,
+    price: "₹3,60,000",
+    priceValue: 360000,
+    originalPrice: "₹4,20,000",
+    kmDriven: "20,000 km",
     fuel: "Petrol",
     transmission: "Manual",
-    interiorMaterial: "Fabric",
     bodyType: "Hatchback",
-    seats: 5,
-    is4x4: false,
-    location: "Delhi",
-    image:
-      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=400&h=300&fit=crop",
+    seats: 4,
+    location: "Lucknow",
+    image: finace,
+
     verified: true,
   },
   {
     id: 8,
-    name: "Creta",
+    name: "Venue",
     brand: "Hyundai",
-    model: "Creta",
-    year: 2022,
-     price: "₹15,0000",
-    priceValue: 15000,
-    originalPrice: "₹16,000",
-    kmDriven: "20,000 km",
-    fuelType: "Diesel",
-    fuel: "Diesel",
+    model: "Venue SX Turbo",
+    year: 2020,
+    price: "₹9,90,000",
+    priceValue: 990000,
+    originalPrice: "₹11,00,000",
+    kmDriven: "25,000 km",
+    fuel: "Petrol",
     transmission: "Automatic",
-    interiorMaterial: "Leather",
     bodyType: "SUV",
     seats: 5,
-    is4x4: true,
-    location: "Mumbai",
-    image:
-          "https://images.unsplash.com/photo-1590362891991-f776e747a588?w=400&h=300&fit=crop",
+    location: "Hyderabad",
+    image: insurance,
+
     verified: true,
   },
   {
     id: 9,
-    name: "Swift",
-    brand: "Maruti",
-    model: "Swift",
+    name: "Thar",
+    brand: "Mahindra",
+    model: "Thar LX",
     year: 2023,
-    price: "₹7,0000",
-    priceValue: 7000,
-    originalPrice: "₹8,000",
-    kmDriven: "12,000 km",
-    fuelType: "Petrol",
+    price: "₹15,00,000",
+    priceValue: 1500000,
+    originalPrice: "₹16,50,000",
+    kmDriven: "10,000 km",
+    fuel: "Diesel",
+    transmission: "Manual",
+    bodyType: "SUV",
+    seats: 4,
+    location: "Goa",
+    image: black,
+
+    verified: true,
+  },
+  {
+    id: 10,
+    name: "i20",
+    brand: "Hyundai",
+    model: "i20 Asta",
+    year: 2021,
+    price: "₹8,70,000",
+    priceValue: 870000,
+    originalPrice: "₹9,40,000",
+    kmDriven: "22,000 km",
     fuel: "Petrol",
     transmission: "Manual",
-    interiorMaterial: "Fabric",
     bodyType: "Hatchback",
     seats: 5,
-    is4x4: false,
+    location: "Bengaluru",
+    image: insurance,
+
+    verified: true,
+  },
+  {
+    id: 11,
+    name: "Innova Crysta",
+    brand: "Toyota",
+    model: "Innova 2.4 VX",
+    year: 2019,
+    price: "₹20,50,000",
+    priceValue: 2050000,
+    originalPrice: "₹23,00,000",
+    kmDriven: "50,000 km",
+    fuel: "Diesel",
+    transmission: "Manual",
+    bodyType: "MPV",
+    seats: 7,
+    location: "Ahmedabad",
+    image: bmw,
+
+    verified: true,
+  },
+  {
+    id: 12,
+    name: "Ertiga",
+    brand: "Maruti",
+    model: "Ertiga ZXI Plus",
+    year: 2022,
+    price: "₹11,20,000",
+    priceValue: 1120000,
+    originalPrice: "₹12,00,000",
+    kmDriven: "12,000 km",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    bodyType: "MPV",
+    seats: 7,
     location: "Delhi",
-    image:
-          "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop",
+    image: black,
+
+    verified: true,
+  },
+  {
+    id: 13,
+    name: "XUV700",
+    brand: "Mahindra",
+    model: "XUV700 AX7",
+    year: 2023,
+    price: "₹22,00,000",
+    priceValue: 2200000,
+    originalPrice: "₹24,00,000",
+    kmDriven: "5,000 km",
+    fuel: "Diesel",
+    transmission: "Automatic",
+    bodyType: "SUV",
+    seats: 7,
+    location: "Chennai",
+    image: bmw,
+
+    verified: true,
+  },
+  {
+    id: 14,
+    name: "Ciaz",
+    brand: "Maruti",
+    model: "Ciaz Alpha",
+    year: 2021,
+    price: "₹9,30,000",
+    priceValue: 930000,
+    originalPrice: "₹10,20,000",
+    kmDriven: "26,000 km",
+    fuel: "Petrol",
+    transmission: "Manual",
+    bodyType: "Sedan",
+    seats: 5,
+    location: "Delhi",
+    image: finace,
+    verified: true,
+  },
+  {
+    id: 15,
+    name: "Magnite",
+    brand: "Nissan",
+    model: "Magnite XV Turbo",
+    year: 2022,
+    price: "₹7,90,000",
+    priceValue: 790000,
+    originalPrice: "₹8,60,000",
+    kmDriven: "14,000 km",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    bodyType: "SUV",
+    seats: 5,
+    location: "Kolkata",
+    image: black,
+
+    verified: true,
+  },
+  {
+    id: 16,
+    name: "Kushaq",
+    brand: "Skoda",
+    model: "Kushaq Ambition",
+    year: 2021,
+    price: "₹11,50,000",
+    priceValue: 1150000,
+    originalPrice: "₹12,30,000",
+    kmDriven: "19,000 km",
+    fuel: "Petrol",
+    transmission: "Manual",
+    bodyType: "SUV",
+    seats: 5,
+    location: "Gurugram",
+    image: insurance,
+
+    verified: true,
+  },
+  {
+    id: 17,
+    name: "Compass",
+    brand: "Jeep",
+    model: "Compass Limited",
+    year: 2020,
+    price: "₹18,40,000",
+    priceValue: 1840000,
+    originalPrice: "₹20,00,000",
+    kmDriven: "40,000 km",
+    fuel: "Diesel",
+    transmission: "Automatic",
+    bodyType: "SUV",
+    seats: 5,
+    location: "Bhopal",
+    image: bmw,
+
+    verified: true,
+  },
+  {
+    id: 18,
+    name: "Octavia",
+    brand: "Skoda",
+    model: "Octavia L&K",
+    year: 2022,
+    price: "₹23,00,000",
+    priceValue: 2300000,
+    originalPrice: "₹25,00,000",
+    kmDriven: "12,000 km",
+    fuel: "Petrol",
+    transmission: "Automatic",
+    bodyType: "Sedan",
+    seats: 5,
+    location: "Delhi",
+    image: black,
+
     verified: true,
   },
 ];
@@ -376,31 +522,34 @@ export default function CarListingPage() {
       </div>
 
       {/* Apply Buttons */}
-      <div className={`₹{isMobile ? "flex gap-3" : ""}`}>
+      <div className="justify-between flex items-center gap-3 ">
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={handleApplyFilters}
-          className={`₹{
-            isMobile ? "flex-1" : "w-full"
-          } bg-[#3E2AD9] text-white py-3 px-4 rounded-lg  cursor-pointer font-semibold hover:bg-[#2b1bbd] transition-all duration-200`}
+          className="flex-1 bg-[#3E2AD9] text-white py-2 px-4 md:px-2 text:sm md:text-[14px] cursor-pointer rounded-lg
+             font-semibold "
         >
           Apply Filters
         </motion.button>
-        {isMobile && (
-          <button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            onClick={clearFilters}
-            className="flex-1 bg-gray-500 text-white py-3 px-4   cursor-pointer rounded-lg
-             font-semibold "
-          >
-            Clear All
-          </button>
-        )}
+        <button
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={clearFilters}
+          className="flex-1 bg-gray-500 text-white py-2 px-4 md:px-2 text:sm md:text-[14px] cursor-pointer rounded-lg"
+        >
+          Clear All
+        </button>
       </div>
     </div>
   );
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const carsPerPage = 9;
+  const totalPages = Math.ceil(filteredCars.length / carsPerPage);
+  const indexOfLastCar = currentPage * carsPerPage;
+  const indexOfFirstCar = indexOfLastCar - carsPerPage;
+  const currentCars = filteredCars.slice(indexOfFirstCar, indexOfLastCar);
 
   return (
     <div className="container-fluid px-2 py-6 flex flex-col md:flex-row gap-6 flex-grow">
@@ -453,7 +602,7 @@ export default function CarListingPage() {
                 <h2 className="text-xl font-bold text-gray-900">Filters</h2>
                 <button
                   onClick={() => setShowMobileFilters(false)}
-                  className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full transition-colors  cursor-pointer" 
+                  className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full transition-colors  cursor-pointer"
                 >
                   <FaTimes size={18} />
                 </button>
@@ -469,19 +618,19 @@ export default function CarListingPage() {
       </AnimatePresence>
 
       {/* Desktop Search */}
-      <div className="hidden md:block w-1/4 lg:w-1/5 border-r border-gray-300 pr-4 overflow-y-auto sticky top-0 h-full">
-        <div className="p-0">
+      <div className="hidden md:block w-1/4 lg:w-1/5 border-r border-gray-300 pr-4 overflow-y-auto sticky  top-0 h-full">
+        <div className="p-0 ">
           <div className="p-0 bg-primary-600 flex items-center justify-between">
             <h2 className="text-xl font-bold gap-2">Car Filters</h2>
             <span className="text-[18px] text-blue-600">
               <FaFilter />
             </span>
           </div>
-          <div className="border-b border-gray-300 w-full mt-3" />
+          {/* <div className="border-b border-gray-300 w-full mt-3" /> */}
 
           <FilterContent />
 
-          <button
+          {/* <button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             onClick={clearFilters}
@@ -489,14 +638,14 @@ export default function CarListingPage() {
              "
           >
             Clear All Filters
-          </button>
+          </button> */}
         </div>
       </div>
-
       {/* Car Listings */}
       <div className="flex-1 overflow-y-auto px-4 py-6">
+        {/* Cars Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {filteredCars.map((car, index) => (
+          {currentCars.map((car, index) => (
             <motion.div
               key={car.id}
               initial={{ opacity: 0, y: 50 }}
@@ -511,8 +660,6 @@ export default function CarListingPage() {
             >
               <div className="overflow-hidden">
                 <img
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
                   src={car.image}
                   alt={car.name}
                   className="w-full h-44 object-cover bg-gray-50"
@@ -562,7 +709,7 @@ export default function CarListingPage() {
                   High quality, luxury cars
                 </div>
                 <a
-                  href="/car/:id"
+                  href={`/car/${car.id}`}
                   className="text-blue-600 hover:underline text-xs font-semibold"
                 >
                   View Details
@@ -571,7 +718,6 @@ export default function CarListingPage() {
             </motion.div>
           ))}
         </div>
-
         {/* No Results */}
         {filteredCars.length === 0 && (
           <motion.div
@@ -592,6 +738,44 @@ export default function CarListingPage() {
               Clear Filters
             </motion.button>
           </motion.div>
+        )}
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center mt-10 gap-2">
+            {/* Prev Button */}
+            <button
+              onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+              disabled={currentPage === 1}
+              className="px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            >
+              Prev
+            </button>
+            {/* Page Numbers */}
+            {[...Array(totalPages)].map((_, index) => (
+              <button
+                key={index + 1}
+                onClick={() => setCurrentPage(index + 1)}
+                className={`w-10 h-10 flex items-center justify-center rounded-full transition-all border
+        ${
+          currentPage === index + 1
+            ? "bg-blue-600 text-white border-blue-600 shadow-md"
+            : "bg-white text-gray-700 border-gray-300 hover:bg-blue-50 hover:border-blue-400"
+        }`}
+              >
+                {index + 1}
+              </button>
+            ))}
+            {/* Next Button */}
+            <button
+              onClick={() =>
+                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+              }
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 rounded-full border border-gray-300 text-gray-600 hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition"
+            >
+              Next
+            </button>
+          </div>
         )}
       </div>
     </div>

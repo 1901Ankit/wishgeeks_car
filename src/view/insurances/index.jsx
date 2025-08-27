@@ -6,7 +6,6 @@ import Choose from "./choose";
 import Quote from "./quote";
 import Cube from "../../component/faq";
 import Cta from "../../component/cta";
-
 const Insurance = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,7 +25,6 @@ const Insurance = () => {
           </h1>
         </div>
       </div>
-
       <div className="container relative mx-auto p-2">
         {/* Stats Section */}
         <div

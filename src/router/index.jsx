@@ -5,7 +5,7 @@ import BuyCars from "../view/buycar";
 import SellCars from "../view/sellcar";
 import Services from "../view/services";
 import Finance from "../view/finance";
-import Insurance from "../view/insurance";
+import Insurance from "../view/insurances";
 import About from "../view/about";
 import Contact from "../view/contact";
 import CarDetails from "../view/cardetail";
@@ -15,11 +15,9 @@ import Delivery from "../view/delivery";
 import Auth from "../view/auth";
 import PersonalInformation from "../component/personal";
 import Photo from "../view/sellcar/fileupload";
-
 const AppLayout = () => {
-  const location = useLocation();
-  const hideLayout = location.pathname === "/auth";
-
+const location = useLocation();
+const hideLayout = location.pathname === "/auth";
   return (
     <>
       {!hideLayout && <Navbar />}

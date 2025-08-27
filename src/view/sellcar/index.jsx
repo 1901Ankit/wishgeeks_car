@@ -77,10 +77,9 @@ const SellCars = () => {
                 You only need to enter your car's VIN, and we'll immediately
                 retrieve comprehensive details on it from the relevant
                 authority. If any of the information in the authority database
-                is outdated or inaccurate, you <span className="text-red-600 px-1">
-                  may modify
-                  </span> 
-                   them.{" "}
+                is outdated or inaccurate, you{" "}
+                <span className="text-red-600 px-1">may modify</span>
+                them.{" "}
               </p>
             </div>
           </div>
