@@ -2,7 +2,7 @@ import React from "react";
 import { Car, CheckCircle, Shield, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Coverages = () => {
+const Coverages_index = () => {
   const insuranceTypes = [
     {
       icon: <Shield className="h-6 w-6 text-white" />,
@@ -104,4 +104,4 @@ const Coverages = () => {
   );
 };
 
-export default Coverages;
+export default Coverages_index;

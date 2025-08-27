@@ -5,7 +5,7 @@ import Choose from "./choose";
 import Quote from "./quote";
 import Cube from "../../component/faq";
 import Cta from "../../component/cta";
-import Coverages from "./Coverage";
+import Coverages_index from "./cover";
 const Insurance = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -73,7 +73,7 @@ const Insurance = () => {
       </div>
       <Quote />
       <Claim />
-      <Coverages />
+      <Coverages_index />
       <Choose />
       <Cube />
       <Cta />
