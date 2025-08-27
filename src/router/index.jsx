@@ -5,7 +5,7 @@ import BuyCars from "../view/buycar";
 import SellCars from "../view/sellcar";
 import Services from "../view/services";
 import Finance from "../view/finance";
-import Insurance from "../view/insurances";
+import Insurance from "../view/insurances/index";
 import About from "../view/about";
 import Contact from "../view/contact";
 import CarDetails from "../view/cardetail";
