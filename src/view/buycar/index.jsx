@@ -738,7 +738,7 @@ export default function CarListingPage() {
                   High quality, luxury cars
                 </div>
                 <a
-                  href={`/car/${car.id}`}
+                  href="/cardetails"
                   className="text-blue-600 hover:underline text-xs font-semibold"
                 >
                   View Details
