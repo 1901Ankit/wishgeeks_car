@@ -261,7 +261,7 @@ const Searchcar = () => {
 
   return (
     <div className="bg-gray-50  py-5">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         <div
           className="bg-white p-4  space-y-8"
           style={{
@@ -301,7 +301,7 @@ const Searchcar = () => {
                 key={car.id}
                 className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-auto overflow-hidden">
                   <img
                     src={car.image}
                     alt={car.name}

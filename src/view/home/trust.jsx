@@ -74,7 +74,7 @@ const TrustedCarsNearby = () => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 bg-gray-50">
+    <div className=" mx-auto px-4 py-6 bg-gray-50">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Get trusted used cars nearby

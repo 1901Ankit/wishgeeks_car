@@ -29,7 +29,7 @@ const Insurance = () => {
         {/* Stats Section */}
         <div
           className="bg-white py-2 w-[100%] md:w-10/12 mx-auto 
-      rounded-lg relative z-10 mt-[-13.5%] md:mt-[-6.5%]"
+      rounded-lg relative z-10 mt-[-13.5%] md:mt-[-4.5%]"
           style={{
             boxShadow: `
         0 4px 12px rgba(0, 0, 0, 0.08),

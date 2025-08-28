@@ -27,7 +27,7 @@ const Eligiblity = () => {
     <>
       {/* Eligibility & Documents */}
       <section className="py-10">
-        <div className="container mx-auto px-4">
+        <div className="container-fluid mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               Your Loan, Refined.

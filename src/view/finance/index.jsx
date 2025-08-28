@@ -14,7 +14,7 @@ const Finance = () => {
   }, []);
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="relative h-[200px] md:h-[300px]">
+      <div className="relative h-[200px] md:h-[350px]">
         <img
           src={finace}
           className="absolute inset-0 object-cover w-full h-full"
@@ -30,7 +30,7 @@ const Finance = () => {
 
       <div className="container relative mx-auto p-3 ">
     <div
-  className="bg-white w-full md:w-10/12 mx-auto p-2 rounded-lg relative z-10 mt-[-13.5%] md:mt-[-6.5%]"
+  className="bg-white w-full md:w-10/12 mx-auto p-2 rounded-lg relative z-10 mt-[-13.5%] md:mt-[-5.5%]"
   style={{
     boxShadow: `
       0 4px 12px rgba(0, 0, 0, 0.08),
@@ -72,9 +72,9 @@ const Finance = () => {
         </div>
       </div>
 
-      <Whychoose />
-      <PartnerMarquee />
       <Emi />
+      <PartnerMarquee />
+      <Whychoose />
       <Loanprocess />
       <Eligiblity />
       <Cube />

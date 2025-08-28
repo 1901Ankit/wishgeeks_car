@@ -56,10 +56,10 @@ function Emi() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-semibold leading-tight mt-1 capitalize text-center mb-10">
-          EMI Calculate
+    <div className="min-h-full bg-gray-50 p-4 mb-5 ">
+      <div className=" mx-auto">
+        <h1 className="text-4xl font-semibold leading-tight  capitalize text-center mb-10">
+          EMI Calculator{" "}
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Panel */}

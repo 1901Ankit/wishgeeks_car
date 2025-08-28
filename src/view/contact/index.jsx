@@ -26,7 +26,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Content */}
-      <div className="container mx-auto mt-10 px-6 ">
+      <div className="container-fluid mx-auto mt-10 px-6 ">
         <div className="flex flex-col md:flex-row gap-10">
           {/* Left: Contact Info */}
           <div className="w-full md:w-1/2 space-y-6">

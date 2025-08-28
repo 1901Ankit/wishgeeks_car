@@ -70,7 +70,7 @@ const CarBrandsExplorer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }} // Only animate once when 30% visible
+      viewport={{ once: true, amount: 0.3 }} 
       whileHover={{
         scale: 1.05,
         boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.15)",
@@ -96,7 +96,7 @@ const CarBrandsExplorer = () => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6 bg-gray-50">
+    <div className=" mx-auto px-4 py-6 bg-gray-50">
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Explore Popular Brands

@@ -439,35 +439,64 @@ export default function CarListingPage() {
       {[
         {
           label: "Make",
-          key: "make",
-          options: ["Maruti", "Hyundai", "Honda"],
+          key: "brand",
+          options: [
+            "Maruti",
+            "Hyundai",
+            "Kia",
+            "Toyota",
+            "Honda",
+            "Mahindra",
+            "Nissan",
+            "Skoda",
+            "Jeep",
+          ],
         },
         {
-          label: "Period",
-          key: "period",
-          options: ["2024", "2023", "2020 - 2022"],
+          label: "Year",
+          key: "year",
+          options: ["2023", "2022", "2021", "2020", "2019"],
         },
         {
           label: "Transmission",
           key: "transmission",
-          options: ["Automatic", "Manual"],
+          options: ["Manual", "Automatic"],
         },
         {
           label: "Fuel Type",
           key: "fuel",
-          options: ["Petrol", "Diesel", "Electric", "Hybrid"],
-        },
-        {
-          label: "Interior Material",
-          key: "interior",
-          options: ["Leather", "Fabric", "Vinyl"],
+          options: ["Petrol", "Diesel"],
         },
         {
           label: "Body Type",
           key: "bodyType",
-          options: ["SUV", "Sedan", "Hatchback", "Coupe", "Convertible"],
+          options: ["Hatchback", "SUV", "Sedan", "MPV"],
         },
-        { label: "Seats", key: "seats", options: [2, 4, 5, 6, 7, 8] },
+        {
+          label: "Seats",
+          key: "seats",
+          options: [4, 5, 7],
+        },
+        {
+          label: "Location",
+          key: "location",
+          options: [
+            "Delhi",
+            "Mumbai",
+            "Chandigarh",
+            "Pune",
+            "Jaipur",
+            "Lucknow",
+            "Hyderabad",
+            "Goa",
+            "Bengaluru",
+            "Ahmedabad",
+            "Chennai",
+            "Kolkata",
+            "Gurugram",
+            "Bhopal",
+          ],
+        },
       ].map(({ label, key, options }) => (
         <div key={key}>
           <label className="block text-base font-semibold mb-1">{label}</label>
@@ -527,7 +556,7 @@ export default function CarListingPage() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={handleApplyFilters}
-          className="flex-1 bg-[#3E2AD9] text-white py-2 px-4 md:px-2 text:sm md:text-[14px] cursor-pointer rounded-lg
+          className="flex-1 bg-[#2380D9] text-white py-2 px-4 md:px-2 text:sm md:text-[14px] cursor-pointer rounded-lg
              font-semibold "
         >
           Apply Filters
@@ -620,7 +649,7 @@ export default function CarListingPage() {
       {/* Desktop Search */}
       <div className="hidden md:block w-1/4 lg:w-1/5 border-r border-gray-300 pr-4 overflow-y-auto sticky  top-0 h-full">
         <div className="p-0 ">
-          <div className="p-0 bg-primary-600 flex items-center justify-between">
+          <div className="p-0 bg-primary-600 flex items-center justify-between mb-5">
             <h2 className="text-xl font-bold gap-2">Car Filters</h2>
             <span className="text-[18px] text-blue-600">
               <FaFilter />
@@ -644,7 +673,7 @@ export default function CarListingPage() {
       {/* Car Listings */}
       <div className="flex-1 overflow-y-auto px-4 py-6">
         {/* Cars Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto">
           {currentCars.map((car, index) => (
             <motion.div
               key={car.id}

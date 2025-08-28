@@ -22,7 +22,7 @@ const WhyChooseCarBazaar = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-10">
+    <div className=" mx-auto px-4 py-10">
    
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-10">

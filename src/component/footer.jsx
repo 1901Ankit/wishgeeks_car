@@ -15,7 +15,7 @@ import logo from "../assets/wish.webp";
 const Footer = () => {
   return (
     <footer className="bg-white text-black py-6 border-t border-gray-800">
-      <div className="container mx-auto px-4">
+      <div className="container-fluid mx-auto px-4">
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Logo & About */}

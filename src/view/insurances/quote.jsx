@@ -13,7 +13,7 @@ const Quote = () => {
   });
 
   return (
-    <div className="container mx-auto md:py-8 px-6 ">
+    <div className="container-fluid mx-auto md:py-8 px-6 ">
       {/* Section 1 */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-start md:items-center gap-10">
         <div className="w-full mb-8 md:mb-0">

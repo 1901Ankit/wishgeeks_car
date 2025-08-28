@@ -65,7 +65,7 @@ const SellCars = () => {
   return (
     <>
       <Stepper />
-      <div className="max-w-7xl mx-auto space-y-10 px-4 py-6 text-sm">
+      <div className=" mx-auto space-y-10 px-4 py-6 text-sm">
         <div className="mb-2">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">
             Vehicle Specification

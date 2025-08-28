@@ -19,7 +19,7 @@ const logos = [
 
 const PartnerMarquee = () => {
   return (
-    <div className="bg-gray-50 py-5 overflow-hidden">
+    <div className="bg-gray-50 py-5 overflow-hidden mb-5">
       <h1 className="text-4xl font-semibold leading-tight mt-1 capitalize text-center mb-10">
         Our Partners
       </h1>

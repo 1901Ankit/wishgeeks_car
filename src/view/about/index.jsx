@@ -17,7 +17,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="relative h-[200px] md:h-[300px]">
+      <div className="relative h-[200px] md:h-[350px]">
         <img
           src={finace}
           className="absolute inset-0 object-cover w-full h-full"

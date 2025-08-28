@@ -43,7 +43,7 @@ const Cube = () => {
   };
 
   return (
-    <section className="container mx-auto px-6  md:py-10 mb-5">
+    <section className="container-fluid mx-auto px-6  md:py-10 mb-5">
       <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
         Frequently Asked Questions
       </h2>

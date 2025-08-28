@@ -33,7 +33,7 @@ const CarDetails = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-8">
+      <div className=" mx-auto grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-6">
           {/* Image Gallery */}
           <div className="bg-white shadow-xl rounded-md overflow-hidden">
@@ -41,7 +41,7 @@ const CarDetails = () => {
               <img
                 src={car.images[activeImageIndex]}
                 alt={car.name}
-                className="w-full h-[320px] object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="flex overflow-x-auto space-x-2 items-center justify-between p-4">

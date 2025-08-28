@@ -107,7 +107,7 @@ const Ev = () => {
 
   return (
     <div className="bg-gray-50  py-5">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="mx-auto px-4">
         <div
           className="bg-white p-4 space-y-8"
           style={{

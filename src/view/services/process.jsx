@@ -60,7 +60,7 @@ const ServiceCard = () => {
           Simple steps to get started withour services{" "}
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {processes.map((process, index) => (
           <div
             key={index}

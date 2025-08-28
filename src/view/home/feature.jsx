@@ -1,5 +1,5 @@
 import React from "react";
-import imagecar from "../../assets/imagecar.png"; // Center car image
+import imagecar from "../../assets/glos.png"; // Center car image
 import image5 from "../../assets/image5.png"; // Background image
 
 const FeaturesSection = () => {
@@ -12,7 +12,7 @@ const FeaturesSection = () => {
         alt="Background"
       />
       {/* Content */}
-      <div className="relative z-10 container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 gap-y-16 lg:gap-x-6">
+      <div className="relative z-10 container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 gap-y-16 lg:gap-x-6">
         {/* Left Features */}
         <div className="space-y-16 max-w-sm text-left">
           {[
@@ -38,7 +38,7 @@ const FeaturesSection = () => {
           <img
             src={imagecar}
             alt="Car Top View"
-            className="w-[280px] md:w-[360px] lg:w-[400px]"
+            className="w-[280px] md:w-[280px] lg:w-[350px]"
           />
         </div>
 

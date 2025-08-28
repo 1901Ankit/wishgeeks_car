@@ -11,7 +11,7 @@ const MissionVision = () => {
 
   return (
     <section className="py-10 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container-fluid mx-auto px-6">
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-gray-800 mb-14 text-center">
           Our Mission & Vision
