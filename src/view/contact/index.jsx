@@ -62,12 +62,12 @@ const Contact = () => {
                 <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-full">
                   <FaPhoneAlt className="text-white text-lg" />
                 </div>
-                <a
-                  href="tel:+918009006231"
+                <Link
+                  to="tel:+918009006231"
                   className="text-gray-600 font-medium hover:text-blue-600 transition"
                 >
                   +91 8009006231{" "}
-                </a>
+                </Link>
               </li>
 
               {/* Email */}
@@ -75,12 +75,12 @@ const Contact = () => {
                 <div className="w-10 h-10 flex items-center justify-center bg-blue-600 rounded-full">
                   <FaEnvelope className="text-white text-lg" />
                 </div>
-                <a
-                  href="mailto:info@wishgeekstechserve.com"
+                <Link
+                  to="mailto:info@wishgeekstechserve.com"
                   className="text-gray-600 font-medium hover:text-blue-600 transition"
                 >
                   info@wishgeekstechserve.com
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -8,7 +8,6 @@ import black from "../../assets/black.jpg";
 import finace from "../../assets/finace.webp";
 import insurance from "../../assets/insurance.jpg";
 const CarDetails = () => {
-  const { id } = useParams();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const car = {

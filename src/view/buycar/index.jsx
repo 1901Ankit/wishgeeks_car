@@ -5,6 +5,7 @@ import bmw from "../../assets/bmw.jpg";
 import black from "../../assets/black.jpg";
 import finace from "../../assets/finace.webp";
 import insurance from "../../assets/insurance.jpg";
+import { Link } from "react-router-dom";
 const allCars = [
   {
     id: 1,
@@ -737,12 +738,12 @@ export default function CarListingPage() {
                   <span className="text-red-600 font-bold">⭑ MAX</span>
                   High quality, luxury cars
                 </div>
-                <a
-                  href="/cardetails"
+                <Link
+                  to="/cardetails"
                   className="text-blue-600 hover:underline text-xs font-semibold"
                 >
                   View Details
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}

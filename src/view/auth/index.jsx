@@ -118,9 +118,9 @@ const Auth = () => {
                     <input type="checkbox" />
                     <span>Remember me</span>
                   </label>
-                  <a href="#" className="text-[#fff] font-medium text-base">
+                  <Link to ="#" className="text-[#fff] font-medium text-base">
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
                 <button
                   className="w-full py-2 bg-[#2380D9]  text-[#fff] cursor-pointer
