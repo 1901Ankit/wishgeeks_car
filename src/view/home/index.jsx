@@ -48,66 +48,62 @@ const Home = () => {
                 backgroundPosition: "center",
               }}
             >
-            <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 "
-    >
-      {/* Left Content */}
-      <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
-        className="max-w-xl text-white"
-      >
-        <p className="text-[#2380D9] font-semibold tracking-widest uppercase">
-          Welcome to Wish Geeks Techserve
-        </p>
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-          Best Way To Find <br />
-          Your <span className="text-[#2380D9]">Dream Car</span>
-        </h1>
-        <p className="text-lg text-white/90">
-          There are many variations of passages orem psum available but the
-          majority have suffered alteration in some form by injected humour.
-        </p>
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 "
+              >
+                <motion.div
+                  initial={{ opacity: 0, y: -30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.8 }}
+                  className="max-w-xl text-white"
+                >
+                  <p className="text-[#2380D9] font-semibold tracking-widest uppercase">
+                    Welcome to Wish Geeks Techserve
+                  </p>
+                  <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
+                    Best Way To Find <br />
+                    Your <span className="text-[#2380D9]">Dream Car</span>
+                  </h1>
+                  <p className="text-lg text-white/90">
+                    There are many variations of passages orem psum available
+                    but the majority have suffered alteration in some form by
+                    injected humour.
+                  </p>
 
-        {/* Buttons */}
-        <div className="flex gap-4 pt-4 flex-wrap">
-          <Link to="/about">
-            <button className="bg-[#2380D9] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 cursor-pointer">
-              About More →
-            </button>
-          </Link>
-          <Link to="/about">
-            <button className="bg-white text-[#2380D9] font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 cursor-pointer">
-              Learn More →
-            </button>
-          </Link>
-        </div>
-      </motion.div>
+                  <div className="flex gap-4 pt-4 flex-wrap">
+                    <Link to="/about">
+                      <button className="bg-[#2380D9] text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+                        About More →
+                      </button>
+                    </Link>
+                    <Link to="/about">
+                      <button className="bg-white text-[#2380D9] font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-300 cursor-pointer">
+                        Learn More →
+                      </button>
+                    </Link>
+                  </div>
+                </motion.div>
 
-      {/* Car Image */}
-      <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="w-full max-w-xl mt-10 lg:mt-0 hidden md:block"
-      >
-        <img
-          src={img}
-          alt="Car"
-          className="w-full h-auto drop-shadow-2xl rounded-xl"
-        />
-      </motion.div>
-    </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: -30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.8 }}
+                  className="w-full max-w-xl mt-10 lg:mt-0 hidden md:block"
+                >
+                  <img
+                    src={img}
+                    alt="Car"
+                    className="w-full h-auto drop-shadow-2xl rounded-xl"
+                  />
+                </motion.div>
+              </motion.div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* Searchcar  */}
       <Searchcar />
       <Ev />
       <CarBrandsExplorer />
