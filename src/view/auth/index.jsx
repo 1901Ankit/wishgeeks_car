@@ -8,6 +8,7 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Auth = () => {
   const otpLength = 6;
