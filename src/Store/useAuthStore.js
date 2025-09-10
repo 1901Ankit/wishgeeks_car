@@ -104,7 +104,7 @@ const useAuthStore = create((set) => ({
   forgotPassword: async (email) => {
     set({ loading: true, error: null });
     try {
-      const res = await api.post("/auth/forgot-password", { email });
+      const res = await api.post("/user/forgot-password", { email });
       set({ loading: false });
       return res.data;
     } catch (err) {
@@ -120,7 +120,7 @@ const useAuthStore = create((set) => ({
     set({ loading: true, error: null });
     try {
       const res = await api.post(
-        `/auth/reset-password?id=${id}&token=${token}`,
+        `/user/reset-password/${id}/${token}`,
         { password: newPassword }
       );
       set({ loading: false });

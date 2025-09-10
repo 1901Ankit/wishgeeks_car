@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import {
   FaEnvelope,
@@ -8,14 +9,25 @@ import {
   FaUser,
 } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuthStore from "../../Store/useAuthStore";
+import toast from "react-hot-toast";
 
 const Auth = () => {
   const otpLength = 6;
+  const navigate = useNavigate();
+  const { register, verifyRegistrationOtp, login, loading, error } =
+    useAuthStore();
   const [isSignUp, setIsSignUp] = useState(false);
   const [otpState, setOtpState] = useState({
     values: new Array(otpLength).fill(""),
     showOtp: false,
+  });
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
   });
 
   //   otpstart
@@ -54,7 +66,42 @@ const Auth = () => {
       ?.focus();
   };
   // otpend
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    try {
+      await register(formData);
+      setOtpState({ ...otpState, showOtp: true, email: formData.email });
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
+  const handleVerifyOtp = async () => {
+    try {
+      const otp = otpState.values.join("");
+      await verifyRegistrationOtp(otpState.email, otp);
+      setIsSignUp(false);
+      setOtpState({
+        values: new Array(otpLength).fill(""),
+        showOtp: false,
+        email: "",
+      });
+      toast.success("Registration successful! Please login.");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await login({ email: formData.email, password: formData.password });
+      toast.success("Login successful!");
+      navigate("/"); // or any post-login route
+    } catch (err) {
+      console.error(err);
+    }
+  };
   // framer
   const formVariants = {
     initial: { opacity: 0, y: 40 },
@@ -91,13 +138,17 @@ const Auth = () => {
           <div className="bg-transparent bg-opacity-10 backdrop-blur-md rounded-2xl px-5 py-5 w-full max-w-md border border-gray-300 cursor-pointer">
             {/* Sign In Form */}
             {!isSignUp && (
-              <form className="mb-5">
+              <form className="mb-5" onSubmit={handleLogin}>
                 <div className="mb-5 relative">
                   <label className="text-white block mb-1">Email</label>
                   <div className="flex items-center border rounded px-3 py-2 bg-transparent text-white">
                     <FaEnvelope className="mr-2" />
                     <input
                       type="email"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       placeholder="Enter your email"
                       className="bg-transparent outline-none text-white w-full"
                     />
@@ -109,25 +160,31 @@ const Auth = () => {
                     <FaLock className="mr-2" />
                     <input
                       type="password"
+                      onChange={(e) =>
+                        setFormData({ ...formData, password: e.target.value })
+                      }
                       placeholder="Enter your password"
                       className="bg-transparent outline-none text-white w-full"
                     />
                   </div>
                 </div>
+                {error && <p className="text-red-500 mb-2">{error}</p>}
                 <div className="flex justify-between items-center text-sm text-white mb-5">
                   <label className="flex items-center space-x-2">
                     <input type="checkbox" />
                     <span>Remember me</span>
                   </label>
-                  <Link to ="#" className="text-[#fff] font-medium text-base">
+                  <Link to="/forgot-password" className="text-[#fff] font-medium text-base">
                     Forgot password?
                   </Link>
                 </div>
                 <button
+                  type="submit"
                   className="w-full py-2 bg-[#2380D9]  text-[#fff] cursor-pointer
                font-bold rounded mb-4 "
+                  disabled={loading}
                 >
-                  Sign In
+                  {loading ? "Signing In..." : "Sign In"}
                 </button>
                 <p className="text-white text-center mb-5">
                   Don't have an account?{" "}
@@ -146,19 +203,17 @@ const Auth = () => {
             {isSignUp && (
               <>
                 {!otpState.showOtp ? (
-                  <form
-                    className=""
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      setOtpState({ ...otpState, showOtp: true });
-                    }}
-                  >
+                  <form className="" onSubmit={handleSignUp}>
                     <div className="mb-4 relative">
                       <label className="text-white block mb-1">Name</label>
                       <div className="flex items-center border rounded px-3 py-2 bg-transparent text-white">
                         <FaUser className="mr-2" />
                         <input
                           type="text"
+                          value={formData.name}
+                          onChange={(e) =>
+                            setFormData({ ...formData, name: e.target.value })
+                          }
                           placeholder="Enter your name"
                           className="bg-transparent outline-none text-white w-full"
                           required
@@ -171,6 +226,10 @@ const Auth = () => {
                         <FaEnvelope className="mr-2" />
                         <input
                           type="email"
+                          value={formData.email}
+                          onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                          }
                           placeholder="Enter your email"
                           className="bg-transparent outline-none text-white w-full"
                           required
@@ -183,18 +242,28 @@ const Auth = () => {
                         <FaLock className="mr-2" />
                         <input
                           type="password"
+                          value={formData.password}
+                          onChange={(e) =>
+                            setFormData({
+                              ...formData,
+                              password: e.target.value,
+                            })
+                          }
                           placeholder="Enter your password"
                           className="bg-transparent outline-none text-white w-full"
                           required
                         />
                       </div>
                     </div>
+                    {error && <p className="text-red-500 mb-2">{error}</p>}
 
-                       <button
-                  className="w-full py-2 bg-[#2380D9]  text-[#fff] cursor-pointer
+                    <button
+                      className="w-full py-2 bg-[#2380D9]  text-[#fff] cursor-pointer
                font-bold rounded mb-4 "
-                >
-                      Sign Up
+                      type="submit"
+                      disabled={loading}
+                    >
+                      {loading ? "Signing Up..." : "Sign Up"}
                     </button>
                     <p className="text-white text-center mb-5">
                       Already have an account?{" "}
@@ -249,6 +318,7 @@ const Auth = () => {
                       <button
                         className="w-1/2 py-2 bg[#fff] border  cursor-pointer text-white font-semibold rounded"
                         type="button"
+                        onClick={handleVerifyOtp}
                       >
                         Verify
                       </button>

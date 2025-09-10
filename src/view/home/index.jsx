@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import Searchcar from "./searchcar";
 import Ev from "./ev";
@@ -17,13 +18,13 @@ import TrustedCarsNearby from "./trust";
 import Circular from "../about/circular";
 import Client from "./client";
 import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [activeTab, setActiveTab] = useState("new");
   const bannerImages = [bmw, black, insurance, finace];
 
   return (
